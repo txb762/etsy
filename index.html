@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etsy</title>
+    <style>
+        header{
+            border-bottom: 1px solid gray;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        li{
+            display: flex;
+            transition: all 0.4s;
+            gap: 24px;
+        }
+        li:hover{
+            transform: scale(1.05);
+            text-decoration: underline;
+        }
+        .Extra-special{
+            justify-content: right;
+            gap: 24px;
+            margin: 50px;
+        }
+        .Celebrate{
+            justify-content: center;
+            width: 16.6%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .Etsy{
+            color: orangered;
+            font-size: 40px;
+            margin-left: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .round{
+            border-radius: 50%;
+        }
+        .center{
+            text-align: center;
+            font-size: 25px;
+        }
+        .text{
+            font-size: 50px;
+            margin-left: 90px;
+        }
+        .introducing{
+            margin-left: 90px;
+            background-color: royalblue;
+            color: white;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        .shop{
+            margin-left: 90px;
+            color: white;
+            background-color: black;
+            height: 40px;
+            font-size: 15px;
+        }
+        .header-text{
+            color: black;
+            font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 10px;
+        }
+        .header-text:hover{
+            background-color: gainsboro;
+            border-radius: 20px;
+        }
+        .search-bar{
+            border: solid 2px black;
+            border-radius: 15px;
+            height: 30px;
+            width: 700px;
+        }
+        button{
+            border-radius: 20px;
+            transition: 0.2s;
+        }
+        button:hover{
+            transform: scale(1.05);
+        }
+        .box{
+            background-color: lightgoldenrodyellow;
+            display: flex;
+            margin: 40px;
+            border: solid lightgray 1px;
+            border-radius: 12px;
+        }
+        .info{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        .pic{
+            width: 50%;
+        }
+        .bottom{
+            background-color: #f4ffb9;
+            margin-top: 50px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        main{
+            font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="Etsy">Etsy</a>
+        <a href="#" class="header-text">☰ Categories</a>
+        <input type="text" placeholder="  Search for anything" class="search-bar">
+        <a href="#" class="header-text">Sign in</a>
+        <a href="#"><img src="Gift.png" alt="Gift" height="50px"></a>
+        <a href="#"><img src="Shopping cart.png" alt="Shopping cart" height="47px"></a>
+    </header>    
+    <main>
+        <div class="box">
+            <div class="info">
+                <div class="introducing">Introducing gift mode</div>
+                <div class="text">Extra-special</div>
+                <div class="text">gifting made</div>
+                <div class="text">extra-easy</div>
+                <button class="shop">Shop now</button>
+            </div>
+            <div class="pic">
+                <ul class="Extra-special">
+                    <li>
+                        <img src="Pisces.png" alt="Pisces" height="200" width="150">
+                    </li>
+                    <li>
+                        <img src="Knitter.png" alt="Knitter" height="200" width="150">
+                    </li>
+                    <li>
+                        <img src="Beauty Guru.png" alt="Beauty Guru" height="200" width="150">
+                    </li>
+                </ul>
+                <ul class="Extra-special">
+                    <li>
+                        <img src="Cowgirl.png" alt="Cowgirl" height="200" width="150">
+                    </li>
+                    <li>
+                        <img src="Dog Lover.png" alt="Dog Lover" height="200" width="150">
+                    </li>
+                    <li>
+                        <img src="Basketball Fan.png" alt="Basketball Fan" height="200" width="150">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="center">Celebrate spring with the freshest finds from small shops.</div>
+        <ul>
+            <li class="Celebrate">
+                <img src="Personalized gifts.png" alt="Personalized gifts" height="100" width="100" class="round">
+                <span>Personalized Gifts</span>
+            </li>
+            <li class="Celebrate">
+                <img src="Home decor.png" alt="Home decor" height="100" width="100" class="round">
+                <span>Home Decor</span>
+            </li>
+            <li class="Celebrate">
+                <img src="Custom clothing.png" alt="Custom clothing" height="100" width="100" class="round">
+                <span>Custom Clothing</span>
+            </li>
+            <li class="Celebrate">
+                <img src="Easter finds.png" alt="Easter finds" height="100" width="100" class="round">
+                <span>Easter Finds</span>
+            </li>
+            <li class="Celebrate">
+                <img src="Top rated trends.png" alt="Top rated trends" height="100" width="100" class="round">
+                <span>Top Rated Trends</span>
+            </li>
+            <li class="Celebrate">
+                <img src="On sale.png" alt="On sale" height="100" width="100" class="round">
+                <span>On Sale</span>
+            </li>
+        </ul>
+        </div>
+    </main>
+</body>
+</html>
